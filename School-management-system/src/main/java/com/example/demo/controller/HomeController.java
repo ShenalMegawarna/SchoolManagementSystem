@@ -14,6 +14,13 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping("/login")
+	public String login() {
+		
+		System.out.println("Login Page");
+		return "login";
+	}
+	
 	
 	
 }

@@ -27,7 +27,7 @@ public class AdminController {
 		
 		repo.save(admin);
 		System.out.println("Admin Saved");
-		return "admin";
+		return "login";
 	}
 	
 	@RequestMapping("/getAdmin")
