@@ -10,11 +10,11 @@ import com.example.demo.model.TimeTable;
 
 public interface TimeTableRepository extends JpaRepository<TimeTable, Integer>{
 
-	List<TimeTable> findByName(String subjectName);
+	List<TimeTable> findBysubjectName(String subjectName);
 	
-	List<TimeTable> findIdGreaterThan(int id);
+	List<TimeTable> findByIdGreaterThan(int id);
 	
-	@Query("from TimeTable where subjectName=? order b id desc")
+	@Query("from TimeTable where subjectName=?1 order by id desc")
 	List<TimeTable> findByNameSorted(String subjectName);
 	
 }
