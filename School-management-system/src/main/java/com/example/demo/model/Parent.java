@@ -16,7 +16,7 @@ public class Parent {
 	private String lastName;
 	private String email;
 	private String gender;
-	private String contact;
+	private int contact;
 	
 	public int getId() {
 		return id;
@@ -48,10 +48,10 @@ public class Parent {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public String getContact() {
+	public int getContact() {
 		return contact;
 	}
-	public void setContact(String contact) {
+	public void setContact(int contact) {
 		this.contact = contact;
 	}
 	@Override

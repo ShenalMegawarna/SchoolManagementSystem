@@ -13,7 +13,7 @@ public class ClassRoom {
 	@GeneratedValue
 	private int id;
 	private String name;
-	private String TeacherInCharge;
+	private String teacherInCharge;
 	
 	public int getId() {
 		return id;
@@ -28,14 +28,14 @@ public class ClassRoom {
 		this.name = name;
 	}
 	public String getTeacherInCharge() {
-		return TeacherInCharge;
+		return teacherInCharge;
 	}
 	public void setTeacherInCharge(String teacherInCharge) {
-		TeacherInCharge = teacherInCharge;
+		this.teacherInCharge = teacherInCharge;
 	}
 	@Override
 	public String toString() {
-		return "ClassRoom [id=" + id + ", name=" + name + ", TeacherInCharge=" + TeacherInCharge + "]";
+		return "ClassRoom [id=" + id + ", name=" + name + ", teacherInCharge=" + teacherInCharge + "]";
 	}
 	
 	
