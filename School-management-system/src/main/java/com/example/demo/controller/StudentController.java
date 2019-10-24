@@ -28,7 +28,6 @@ public class StudentController {
 	
 	@PostMapping("/student")
 	public Student addStudent(@RequestBody Student student) {
-		
 		repo.save(student);
 		return student;
 	}
@@ -53,7 +52,6 @@ public class StudentController {
 	
 	@PutMapping("/student")
 	public Student updateStudent(@RequestBody Student student) {
-		
 		repo.save(student);
 		return student;
 	}
